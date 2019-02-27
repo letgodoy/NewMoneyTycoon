@@ -1,0 +1,50 @@
+$font-main: "Roboto",
+"Segoe UI",
+"Oxygen",
+"Ubuntu",
+"Cantarell",
+"Fira Sans",
+"Droid Sans",
+"Helvetica Neue",
+sans-serif;
+$font-title: 'Kristen ITC', "Roboto";
+$cor-principal: #FF5722;
+$cor-sec: #2196F3;
+$fundo: white;
+$logo-height: 100vh;
+$cor-text: #2E2E2E;
+
+$shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1),
+0 2px 49px 0 rgba(0, 0, 0, 0.06);
+
+body {
+    font-family: $font-main;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+    color: $cor-principal;
+}
+
+.app {
+    color: $cor-text;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        $logo-height;
+    grid-template-areas:
+        "logo";
+    height: 100vh;
+    background-color: $fundo;
+}
+
+header.logo {
+    grid-area: logo;
+}
